@@ -1,6 +1,6 @@
 [Unit]
-Description=Renew DNS for gandi LiveDNS
+Description=Certbot renew using DNS for Gandi LiveDNS
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/certbot renew -q --authenticator dns-gandi --dns-gandi-credentials /etc/letsencrypt/gandi.ini --server https://acme-v02.api.letsencrypt.org/directory
+ExecStart=/usr/bin/certbot renew -q --authenticator dns-gandi --dns-gandi-credentials /etc/letsencrypt/gandi.ini
